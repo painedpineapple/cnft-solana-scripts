@@ -1,0 +1,32 @@
+{
+  "name": "logan-solana-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "convert-private-key-to-keypair.js",
+  "scripts": {
+    "watch": "tsc-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.19.4",
+    "@metaplex-foundation/mpl-bubblegum": "^0.7.0",
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/spl-account-compression": "^0.1.10",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.78.3",
+    "@types/node": "^18.11.12",
+    "axios": "^1.4.0",
+    "bn": "^1.0.5",
+    "bs58": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "tsc-watch": "^6.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
