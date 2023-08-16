@@ -30,8 +30,10 @@ dotenv.config();
 const run = async () => {
   try {
     const cNFTs = await getAssets([
+      // assetId of cNFT. Can find this in your wallet when clicking a view on chain button. It's not really a solana address but looks like one. Just copy that "address" from the explorer.
       "GGgs9JsHxNN9xD7ZV2nCyHGMZnWj2f7LhppRyCHrGUYX",
     ]);
+    // can also get all cnfts from the collection
     // const cNFTs = await getAssetsByGroup(COMPRESSED_COLLECTION.MINT.toString());
     const asset = cNFTs[0].result;
     const assetProof = await getAssetProof(asset.id);
